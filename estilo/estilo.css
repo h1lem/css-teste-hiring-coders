@@ -96,10 +96,9 @@ header ul li a:hover{
 }
 
 .flex img {
-   max-width: 300px;
-   border-radius: 20px;
-   margin: 15px 0px 0px 10px;
-
+    max-width: 300px;
+    border-radius: 20px;
+    margin: 15px 0px 0px 10px;
 }
 
 #about p {
