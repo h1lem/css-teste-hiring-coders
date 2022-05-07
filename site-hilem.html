@@ -60,11 +60,11 @@
                     </div>
                 </div>
 
-             <div id="arrow">
-               <i class="fa-solid fa-angle-down"></i>
+             <div onclick="displayAbout()" id="arrow">
+               <i id="animation" class="fa-solid fa-angle-down"></i>
              </div>
 
-            <div id="about">
+            <div style="display:none;" id="about">
                 <p>
                     <br> Site construído durante aula de HTML + CSS com Kai Pimenta, na Gama Academy.
                 </p>
@@ -78,12 +78,23 @@
 
            <br> <div class="form">
                 <form action="">
-                    <input type="text" placeholder="email">
-                    <button>enviar</button>
+                    <input type="text" placeholder=" fulanabeltrana@mail.com">
+                    <button>enviar</button> 
+                    <br>
                 </form>
             </div>
         </section>
-
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById ("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById ("about");
+            display.classList.toggle("active");
+        }
+
+    </script>
+
 </body>
 </html>

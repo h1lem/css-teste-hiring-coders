@@ -24,7 +24,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    /* border-bottom: 1px solid dimgrey; */
+    /* box-shadow: 1px 10px 1px 1px greenyellow; */
+    /* border-bottom: 15px ridge floralwhite; */
 }
 
 header ul {
@@ -33,6 +36,16 @@ header ul {
 
 header ul li {
     padding: 5px;
+    border-bottom: 1px dashed goldenrod;
+}
+
+header ul li {
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color: dimgray;
+    text-decoration: overline black;
 }
 
 .container {
@@ -48,6 +61,31 @@ header ul li {
     font-family: 'Satisfy', cursive;
 }
 
+#arrow {
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 5s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 400ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
 .flex {
     display: flex;
 }
@@ -59,48 +97,40 @@ header ul li {
 
 .flex img {
    max-width: 300px;
+   border-radius: 20px;
+   margin: 15px 0px 0px 10px;
+
 }
 
 #about p {
-    max-width:600px;
+    max-width: 800px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: center;
 }
 
+.form input {
+    margin: 5px 10px 20px 5px;
+    border: 1px solid midnightblue;
+    border-radius: 2px;
+}
 
+.form button {
+    width: 4%;
+    padding: 1px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    color: midnightblue;
+    font-weight: 100;
+    cursor: pointer;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
 
+.form button:hover {
+    background-color: goldenrod;
+    color: #FFFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width:480px) {
+    
+}
